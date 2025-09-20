@@ -1,13 +1,13 @@
 // SINGLETON: Only one instance exists
-class Singleton {
-    private static Singleton instance;
+class MySingleton {
+    private static MySingleton instance;
 
-    private Singleton() {
+    private MySingleton() {
     } // Private constructor
 
-    public static Singleton getInstance() {
+    public static MySingleton getInstance() {
         if (instance == null) {
-            instance = new Singleton();
+            instance = new MySingleton();
         }
         return instance;
     }
@@ -20,8 +20,8 @@ class Singleton {
 // Usage
 class SingletonDemo {
     public static void main(String[] args) {
-        Singleton s1 = Singleton.getInstance();
-        Singleton s2 = Singleton.getInstance();
+        MySingleton s1 = MySingleton.getInstance();
+        MySingleton s2 = MySingleton.getInstance();
 
         System.out.println("Same instance? " + (s1 == s2)); // true
         s1.showMessage();
