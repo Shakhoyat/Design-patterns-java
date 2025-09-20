@@ -42,7 +42,7 @@ class Circle extends Shape {
 }
 
 // Usage
-class BridgeDemo {
+public class BridgeDemo {
     public static void main(String[] args) {
         Shape redCircle = new Circle(new Red());
         Shape blueCircle = new Circle(new Blue());
